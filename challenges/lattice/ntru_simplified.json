@@ -1,0 +1,16 @@
+{
+  "name": "ntru_simplified_attack",
+  "category": "lattice",
+  "difficulty": "expert",
+  "description": "NTRU简化版攻击\n\n参数: N=7, p=3, q=41\n公钥h = [6, 32, 15, 8, 30, 17, 35]\n密文e = [15, 22, 8, 30, 17, 6, 32]\n\n使用格攻击恢复私钥f。",
+  "flag": "flag{ntru_lattice_attack_success}",
+  "hint": "构造NTRU格 [[I, H], [0, qI]]",
+  "solution_type": "ntru_lattice",
+  "parameters": {
+    "N": 7,
+    "p": 3,
+    "q": 41,
+    "h": [6, 32, 15, 8, 30, 17, 35],
+    "e": [15, 22, 8, 30, 17, 6, 32]
+  }
+}

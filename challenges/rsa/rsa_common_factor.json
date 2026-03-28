@@ -1,0 +1,13 @@
+{
+  "name": "rsa_common_factor",
+  "category": "rsa",
+  "difficulty": "medium",
+  "description": "两组RSA密钥使用了相同的素数\n\n第一组: n1 = 393754200169\n第二组: n2 = 393754200221\n\n请找出它们的公因子，分解n1和n2。",
+  "flag": "flag{common_factor_attack}",
+  "hint": "使用欧几里得算法求gcd(n1, n2)",
+  "solution_type": "common_factor",
+  "parameters": {
+    "n1": 393754200169,
+    "n2": 393754200221
+  }
+}

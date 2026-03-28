@@ -1,0 +1,11 @@
+{
+  "total_raw": 501,
+  "total_quality": 498,
+  "train_count": 398,
+  "valid_count": 100,
+  "categories": {
+    "Unknown": 498
+  },
+  "train_file": "data/training/prepared/train.jsonl",
+  "valid_file": "data/training/prepared/valid.jsonl"
+}

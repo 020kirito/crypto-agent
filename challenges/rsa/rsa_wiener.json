@@ -1,0 +1,13 @@
+{
+  "name": "rsa_wiener_attack",
+  "category": "rsa",
+  "difficulty": "hard",
+  "description": "Wiener攻击 - 当私钥d太小时\n\nn = 90581\ne = 17993\n\n请使用Wiener攻击恢复私钥d。提示：使用连分数展开e/n。",
+  "flag": "flag{wiener_attack_success}",
+  "hint": "d < n^0.25时Wiener攻击有效",
+  "solution_type": "wiener_attack",
+  "parameters": {
+    "n": 90581,
+    "e": 17993
+  }
+}

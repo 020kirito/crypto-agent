@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-03-28 19:30:38",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 7,
+    "success": 5,
+    "failed": 2,
+    "success_rate": 0.7142857142857143,
+    "total_time": 357.01075053215027,
+    "avg_time": 51.00153579030718
+  },
+  "by_category": {
+    "block": {
+      "total": 1,
+      "success": 1,
+      "time": 10.342135906219482
+    },
+    "ecc": {
+      "total": 2,
+      "success": 1,
+      "time": 218.5432412624359
+    },
+    "lattice": {
+      "total": 1,
+      "success": 1,
+      "time": 61.20150876045227
+    },
+    "rsa": {
+      "total": 2,
+      "success": 2,
+      "time": 28.15626311302185
+    },
+    "stream": {
+      "total": 1,
+      "success": 0,
+      "time": 38.76760149002075
+    }
+  },
+  "by_difficulty": {
+    "hard": {
+      "total": 7,
+      "success": 5,
+      "time": 357.01075053215027
+    }
+  },
+  "details": [
+    {
+      "name": "aes_cbc_padding_oracle",
+      "category": "block",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{...}",
+      "flag_expected": "flag{padding_oracle_attack_success}",
+      "flag_correct": false,
+      "elapsed_time": 10.342135906219482,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_singular_curve_attack",
+      "category": "ecc",
+      "difficulty": "hard",
+      "success": false,
+      "flag_found": "",
+      "flag_expected": "flag{singular_curve_dlp_solved}",
+      "flag_correct": null,
+      "elapsed_time": 205.16202878952026,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_smart_attack_anomalous",
+      "category": "ecc",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{k}",
+      "flag_expected": "flag{smart_attack_k_12345}",
+      "flag_correct": false,
+      "elapsed_time": 13.38121247291565,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lattice_coppersmith",
+      "category": "lattice",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{A1ic3_Und3r_Gr0und}",
+      "flag_expected": "flag{coppersmith_recovered_m}",
+      "flag_correct": false,
+      "elapsed_time": 61.20150876045227,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_blinding_attack",
+      "category": "rsa",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{admin}",
+      "flag_expected": "flag{rsa_blinding_works}",
+      "flag_correct": false,
+      "elapsed_time": 14.395426750183105,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_wiener_attack",
+      "category": "rsa",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{未找到flag}",
+      "flag_expected": "flag{wiener_attack_success}",
+      "flag_correct": false,
+      "elapsed_time": 13.760836362838745,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lfsr_correlation_attack",
+      "category": "stream",
+      "difficulty": "hard",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{geffe_correlation_attack}",
+      "flag_correct": null,
+      "elapsed_time": 38.76760149002075,
+      "steps": 0,
+      "tools_used": []
+    }
+  ]
+}

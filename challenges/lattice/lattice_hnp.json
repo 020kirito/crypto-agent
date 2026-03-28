@@ -1,0 +1,14 @@
+{
+  "name": "lattice_hidden_number_problem",
+  "category": "lattice",
+  "difficulty": "expert",
+  "description": "隐藏数问题 (HNP)\n\n给定素数p和多个(a_i, b_i)对，其中：\nb_i ≡ a_i * x + e_i (mod p)\n|e_i| < B（小误差）\n\n求秘密x。这是DSAnonce泄露攻击的基础。",
+  "flag": "flag{hnp_solved_x_recovered}",
+  "hint": "构造格 [[p, 0, ..., 0], [a1, 1, 0, ...], ..., [ak, 0, ..., 1]]",
+  "solution_type": "hnp_attack",
+  "parameters": {
+    "p": "0x...",
+    "samples": 20,
+    "bound_bits": 64
+  }
+}

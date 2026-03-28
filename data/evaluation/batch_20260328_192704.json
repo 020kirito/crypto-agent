@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-03-28 19:27:04",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 3,
+    "success": 2,
+    "failed": 1,
+    "success_rate": 0.6666666666666666,
+    "total_time": 148.01401019096375,
+    "avg_time": 49.338003396987915
+  },
+  "by_category": {
+    "classical": {
+      "total": 1,
+      "success": 1,
+      "time": 65.11542749404907
+    },
+    "ecc": {
+      "total": 1,
+      "success": 1,
+      "time": 39.8233540058136
+    },
+    "rsa": {
+      "total": 1,
+      "success": 0,
+      "time": 43.075228691101074
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 3,
+      "success": 2,
+      "time": 148.01401019096375
+    }
+  },
+  "details": [
+    {
+      "name": "vigenere_kasiski_examination",
+      "category": "classical",
+      "difficulty": "easy",
+      "success": true,
+      "flag_found": "flag{a}",
+      "flag_expected": "flag{kasiski_key_crypto}",
+      "flag_correct": false,
+      "elapsed_time": 65.11542749404907,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_point_addition",
+      "category": "ecc",
+      "difficulty": "easy",
+      "success": true,
+      "flag_found": "flag{(x_R, y_R)}",
+      "flag_expected": "flag{ecc_addition_10_6}",
+      "flag_correct": false,
+      "elapsed_time": 39.8233540058136,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_small_e",
+      "category": "rsa",
+      "difficulty": "easy",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{small_e_attack}",
+      "flag_correct": null,
+      "elapsed_time": 43.075228691101074,
+      "steps": 0,
+      "tools_used": []
+    }
+  ]
+}

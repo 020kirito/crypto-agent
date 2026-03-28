@@ -1,0 +1,15 @@
+{
+  "name": "lattice_coppersmith",
+  "category": "lattice",
+  "difficulty": "hard",
+  "description": "Coppersmith方法 - 部分信息泄露\n\nRSA中：\nn = 1023...（1024位）\ne = 3\nc = m^e mod n\n已知m的高位：0x48656c6c6f（Hello）\n\n恢复完整明文m。",
+  "flag": "flag{coppersmith_recovered_m}",
+  "hint": "构造多项式f(x) = (known + x)^e - c ≡ 0 (mod n)",
+  "solution_type": "coppersmith",
+  "parameters": {
+    "n_bits": 1024,
+    "e": 3,
+    "known_bits": 48,
+    "known_prefix": "0x48656c6c6f"
+  }
+}

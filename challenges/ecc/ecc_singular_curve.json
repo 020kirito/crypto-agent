@@ -1,0 +1,17 @@
+{
+  "name": "ecc_singular_curve_attack",
+  "category": "ecc",
+  "difficulty": "hard",
+  "description": "奇异曲线攻击\n\n曲线: y^2 = x^3 + 2x^2 + 3x + 4 (mod 997)\n判别式Δ=0，曲线是奇异的（有尖点或结点）\n\n将曲线映射到加法群，求解ECDLP。",
+  "flag": "flag{singular_curve_dlp_solved}",
+  "hint": "奇异曲线同构于乘法群或加法群",
+  "solution_type": "singular_curve",
+  "parameters": {
+    "p": 997,
+    "a1": 2,
+    "a2": 3,
+    "a3": 4,
+    "P": [1, 3],
+    "Q": [4, 11]
+  }
+}

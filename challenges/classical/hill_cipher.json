@@ -1,0 +1,15 @@
+{
+  "name": "hill_cipher_known_plaintext",
+  "category": "classical",
+  "difficulty": "medium",
+  "description": "Hill密码 - 已知明文攻击\n\n使用2x2矩阵加密的Hill密码。\n已知明文'help'对应密文'KFPN'\n求密钥矩阵并解密密文'CQZM'。",
+  "flag": "flag{hill_matrix_inverted}",
+  "hint": "构造方程求解密钥矩阵",
+  "solution_type": "hill_known_plaintext",
+  "parameters": {
+    "known_plaintext": "help",
+    "known_ciphertext": "KFPN",
+    "target_ciphertext": "CQZM",
+    "matrix_size": 2
+  }
+}

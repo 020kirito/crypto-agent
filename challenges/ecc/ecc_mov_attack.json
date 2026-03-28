@@ -1,0 +1,18 @@
+{
+  "name": "ecc_mov_attack",
+  "category": "ecc",
+  "difficulty": "expert",
+  "description": "MOV攻击 - 将ECDLP规约到DLP\n\n曲线E: y^2 = x^3 + x + 1 (mod 23)\n嵌入度k=2\nP = (13, 7), order n=29\nQ = (17, 8) = d * P\n\n使用MOV攻击求d。",
+  "flag": "flag{mov_attack_d_15}",
+  "hint": "使用Weil配对或Tate配对将ECDLP映射到F_{p^k}^*",
+  "solution_type": "mov_attack",
+  "parameters": {
+    "p": 23,
+    "a": 1,
+    "b": 1,
+    "n": 29,
+    "k": 2,
+    "P": [13, 7],
+    "Q": [17, 8]
+  }
+}

@@ -1,0 +1,22 @@
+题目: Autokey Cipher (自动密钥密码)
+
+来源: UTCTF 2025
+
+题目描述：
+我们截获了一段使用 Autokey 密码加密的 flag。
+
+密文：
+```
+lpqwma{rws_ywpqaauad_rrqfcfkq_wuey_ifwo_xlkvxawjh_pkbgrzf}
+```
+
+提示：
+1. Autokey 密码是 Vigenère 密码的变种
+2. 密钥由两部分组成：初始密钥 + 明文本身
+3. 加密公式：cipher[i] = (plain[i] + key[i]) mod 26
+4. 当 i < len(initial_key) 时，key[i] = initial_key[i]
+5. 当 i >= len(initial_key) 时，key[i] = plain[i - len(initial_key)]
+6. 密钥长度较短 (通常 1-6 个字符)
+7. 可以通过频率分析破解
+
+请破解密文获取 flag。

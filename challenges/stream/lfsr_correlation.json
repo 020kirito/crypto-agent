@@ -1,0 +1,13 @@
+{
+  "name": "lfsr_correlation_attack",
+  "category": "stream",
+  "difficulty": "hard",
+  "description": "相关攻击 - Geffe生成器\n\nGeffe生成器组合了3个LFSR：\nz = x1*x2 ⊕ (¬x1)*x3\n已知输出z的部分比特，求LFSR的初始状态。",
+  "flag": "flag{geffe_correlation_attack}",
+  "hint": "利用P(z=x2)=0.75和P(z=x3)=0.75的相关性",
+  "solution_type": "correlation_attack",
+  "parameters": {
+    "lfsr_lengths": [11, 9, 13],
+    "output_length": 100
+  }
+}

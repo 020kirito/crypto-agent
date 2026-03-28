@@ -1,0 +1,13 @@
+{
+  "name": "lattice_lll_basic",
+  "category": "lattice",
+  "difficulty": "medium",
+  "description": "格基约减基础 - LLL算法\n\n给定格基矩阵:\n[[105, 0, 0],\n [47, 64, 0],\n [31, 29, 64]]\n\n使用LLL算法找到短向量。",
+  "flag": "flag{lll_short_vector_found}",
+  "hint": "使用LLL算法，delta=0.75",
+  "solution_type": "lll_reduction",
+  "parameters": {
+    "basis": [[105, 0, 0], [47, 64, 0], [31, 29, 64]],
+    "delta": 0.75
+  }
+}

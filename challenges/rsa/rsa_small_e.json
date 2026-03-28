@@ -1,0 +1,14 @@
+{
+  "name": "rsa_small_e",
+  "category": "rsa",
+  "difficulty": "easy",
+  "description": "RSA加密，小公钥指数攻击\n\nn = 2531257\ne = 3\nc = 1367491\n\n请解密密文c，获取flag。提示：当e很小且m^e < n时，可以直接开方。",
+  "flag": "flag{small_e_attack}",
+  "hint": "尝试对c直接开3次方",
+  "solution_type": "small_e_attack",
+  "parameters": {
+    "n": 2531257,
+    "e": 3,
+    "c": 1367491
+  }
+}

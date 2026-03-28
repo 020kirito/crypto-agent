@@ -1,0 +1,16 @@
+{
+  "name": "ecc_smart_attack_anomalous",
+  "category": "ecc",
+  "difficulty": "hard",
+  "description": "Smart攻击 - 异常曲线\n\n曲线E: y^2 = x^3 + 3x + 7 (mod 61057)\n这是一个异常曲线（order = p）\nP = (4137, 44282)\nQ = (25165, 10501) = k * P\n\n求k。",
+  "flag": "flag{smart_attack_k_12345}",
+  "hint": "使用p-adic提升方法",
+  "solution_type": "smart_attack",
+  "parameters": {
+    "p": 61057,
+    "a": 3,
+    "b": 7,
+    "P": [4137, 44282],
+    "Q": [25165, 10501]
+  }
+}

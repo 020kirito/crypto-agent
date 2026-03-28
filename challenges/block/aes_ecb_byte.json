@@ -1,0 +1,14 @@
+{
+  "name": "aes_ecb_byte_at_a_time",
+  "category": "block",
+  "difficulty": "medium",
+  "description": "AES-ECB字节翻转攻击\n\n有一个加密oracle，它附加一个秘密字符串后使用AES-ECB加密。\n你可以提交任意前缀。\n请逐步恢复秘密字符串。",
+  "flag": "flag{ecb_byte_at_a_time_decrypted}",
+  "hint": "逐字节恢复：控制前缀使目标字节处于块末尾",
+  "solution_type": "ecb_byte_at_a_time",
+  "parameters": {
+    "mode": "ECB",
+    "block_size": 16,
+    "secret_length": 32
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-03-28 19:42:45",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "success_rate": 1.0,
+    "total_time": 1407.7387173175812,
+    "avg_time": 703.8693586587906
+  },
+  "by_category": {
+    "classical": {
+      "total": 2,
+      "success": 2,
+      "time": 1407.7387173175812
+    }
+  },
+  "by_difficulty": {
+    "medium": {
+      "total": 1,
+      "success": 1,
+      "time": 114.9598114490509
+    },
+    "easy": {
+      "total": 1,
+      "success": 1,
+      "time": 1292.7789058685303
+    }
+  },
+  "details": [
+    {
+      "name": "hill_cipher_known_plaintext",
+      "category": "classical",
+      "difficulty": "medium",
+      "success": true,
+      "flag_found": "flag{ZBBZ}",
+      "flag_expected": "flag{hill_matrix_inverted}",
+      "flag_correct": false,
+      "elapsed_time": 114.9598114490509,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "vigenere_kasiski_examination",
+      "category": "classical",
+      "difficulty": "easy",
+      "success": true,
+      "flag_found": "flag{a}",
+      "flag_expected": "flag{kasiski_key_crypto}",
+      "flag_correct": false,
+      "elapsed_time": 1292.7789058685303,
+      "steps": 0,
+      "tools_used": []
+    }
+  ]
+}

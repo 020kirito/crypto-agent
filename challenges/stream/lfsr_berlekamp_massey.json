@@ -1,0 +1,13 @@
+{
+  "name": "lfsr_berlekamp_massey",
+  "category": "stream",
+  "difficulty": "medium",
+  "description": "LFSR序列恢复 - Berlekamp-Massey算法\n\n给定LFSR输出序列：\n1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1,...\n\n求最短LFSR的反馈多项式。",
+  "flag": "flag{berlekamp_massey_degree_5}",
+  "hint": "使用Berlekamp-Massey算法找到最短LFSR",
+  "solution_type": "berlekamp_massey",
+  "parameters": {
+    "sequence": [1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1],
+    "field": "GF(2)"
+  }
+}

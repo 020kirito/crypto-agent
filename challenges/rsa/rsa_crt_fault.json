@@ -1,0 +1,15 @@
+{
+  "name": "rsa_crt_fault_injection",
+  "category": "rsa",
+  "difficulty": "expert",
+  "description": "RSA-CRT故障注入攻击\n\n使用中国剩余定理(CRT)加速的RSA签名。\n正常签名: s = m^d mod n\n故障签名: s' = m^d mod p（q计算出错）\n\n利用gcd(s - s', n) = p恢复因子。",
+  "flag": "flag{crt_fault_attack_p_q_recovered}",
+  "hint": "s ≡ s' (mod p) 但 s ≢ s' (mod q)",
+  "solution_type": "crt_fault",
+  "parameters": {
+    "n": "0x...",
+    "message": "hello",
+    "signature_correct": "0x...",
+    "signature_faulty": "0x..."
+  }
+}

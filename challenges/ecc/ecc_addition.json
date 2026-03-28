@@ -1,0 +1,16 @@
+{
+  "name": "ecc_point_addition",
+  "category": "ecc",
+  "difficulty": "easy",
+  "description": "椭圆曲线点加法\n\n曲线: y^2 = x^3 + 2x + 2 (mod 17)\n点P = (5, 1)\n点Q = (6, 3)\n\n计算R = P + Q。",
+  "flag": "flag{ecc_addition_10_6}",
+  "hint": "使用椭圆曲线点加公式",
+  "solution_type": "ecc_add",
+  "parameters": {
+    "p": 17,
+    "a": 2,
+    "b": 2,
+    "P": [5, 1],
+    "Q": [6, 3]
+  }
+}

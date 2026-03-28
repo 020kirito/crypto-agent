@@ -1,0 +1,16 @@
+{
+  "name": "ecc_scalar_multiplication",
+  "category": "ecc",
+  "difficulty": "medium",
+  "description": "椭圆曲线标量乘法\n\n曲线: y^2 = x^3 + 2x + 3 (mod 97)\n基点G = (3, 6)\nk = 17\n\n计算Q = k * G。",
+  "flag": "flag{ecc_scalar_80_87}",
+  "hint": "使用快速幂算法进行倍点运算",
+  "solution_type": "ecc_scalar_mul",
+  "parameters": {
+    "p": 97,
+    "a": 2,
+    "b": 3,
+    "G": [3, 6],
+    "k": 17
+  }
+}

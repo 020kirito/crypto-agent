@@ -1,0 +1,15 @@
+{
+  "name": "aes_cbc_padding_oracle",
+  "category": "block",
+  "difficulty": "hard",
+  "description": "CBC填充Oracle攻击\n\n有一个解密oracle，它返回填充是否正确。\n密文：iv + ciphertext\n利用填充oracle恢复明文。",
+  "flag": "flag{padding_oracle_attack_success}",
+  "hint": "逐字节修改IV，观察填充错误",
+  "solution_type": "padding_oracle",
+  "parameters": {
+    "mode": "CBC",
+    "block_size": 16,
+    "iv": "0x...",
+    "ciphertext": "0x..."
+  }
+}

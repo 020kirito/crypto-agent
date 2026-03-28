@@ -1,0 +1,13 @@
+{
+  "name": "rsa_blinding_attack",
+  "category": "rsa",
+  "difficulty": "hard",
+  "description": "RSA签名盲化攻击\n\n这是一个RSA签名oracle，它会签名任意消息，但拒绝签名包含'admin'的消息。\n请获取'admin'的签名。",
+  "flag": "flag{rsa_blinding_works}",
+  "hint": "使用盲化因子r，请求签名m * r^e mod n，然后除以r",
+  "solution_type": "blinding_attack",
+  "parameters": {
+    "n": "0x...",
+    "e": 65537
+  }
+}

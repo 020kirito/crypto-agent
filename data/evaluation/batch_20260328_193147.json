@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-03-28 19:31:47",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 6,
+    "success": 3,
+    "failed": 3,
+    "success_rate": 0.5,
+    "total_time": 427.02407908439636,
+    "avg_time": 71.1706798473994
+  },
+  "by_category": {
+    "block": {
+      "total": 1,
+      "success": 0,
+      "time": 91.03664898872375
+    },
+    "classical": {
+      "total": 1,
+      "success": 0,
+      "time": 277.83519434928894
+    },
+    "ecc": {
+      "total": 1,
+      "success": 1,
+      "time": 16.365774869918823
+    },
+    "lattice": {
+      "total": 1,
+      "success": 1,
+      "time": 4.0907511711120605
+    },
+    "rsa": {
+      "total": 1,
+      "success": 1,
+      "time": 21.020586252212524
+    },
+    "stream": {
+      "total": 1,
+      "success": 0,
+      "time": 16.67512345314026
+    }
+  },
+  "by_difficulty": {
+    "medium": {
+      "total": 6,
+      "success": 3,
+      "time": 427.02407908439636
+    }
+  },
+  "details": [
+    {
+      "name": "aes_ecb_byte_at_a_time",
+      "category": "block",
+      "difficulty": "medium",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{ecb_byte_at_a_time_decrypted}",
+      "flag_correct": null,
+      "elapsed_time": 91.03664898872375,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "hill_cipher_known_plaintext",
+      "category": "classical",
+      "difficulty": "medium",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{hill_matrix_inverted}",
+      "flag_correct": null,
+      "elapsed_time": 277.83519434928894,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_scalar_multiplication",
+      "category": "ecc",
+      "difficulty": "medium",
+      "success": true,
+      "flag_found": "flag{(59, 47)}",
+      "flag_expected": "flag{ecc_scalar_80_87}",
+      "flag_correct": false,
+      "elapsed_time": 16.365774869918823,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lattice_lll_basic",
+      "category": "lattice",
+      "difficulty": "medium",
+      "success": true,
+      "flag_found": "flag{-16, -35, 64}",
+      "flag_expected": "flag{lll_short_vector_found}",
+      "flag_correct": false,
+      "elapsed_time": 4.0907511711120605,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_common_factor",
+      "category": "rsa",
+      "difficulty": "medium",
+      "success": true,
+      "flag_found": "flag{公因子未找到，n1=11*35795836379, n2=41*9603760981}",
+      "flag_expected": "flag{common_factor_attack}",
+      "flag_correct": false,
+      "elapsed_time": 21.020586252212524,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lfsr_berlekamp_massey",
+      "category": "stream",
+      "difficulty": "medium",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{berlekamp_massey_degree_5}",
+      "flag_correct": null,
+      "elapsed_time": 16.67512345314026,
+      "steps": 0,
+      "tools_used": []
+    }
+  ]
+}

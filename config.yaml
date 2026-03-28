@@ -1,0 +1,43 @@
+# CTF Crypto Agent 配置文件
+
+# LLM 配置
+llm:
+  provider: "openai"  # openai, kimi, openrouter
+  model: "kimi-latest"
+  base_url: "https://api.moonshot.cn/v1"
+  temperature: 0.7
+  max_tokens: 4096
+  timeout: 120
+
+# Agent 配置
+agent:
+  name: "CTF-Crypto-Agent"
+  max_iterations: 50
+  max_tool_calls: 100
+  debug: true
+  
+# MCP 配置
+mcp:
+  server_host: "localhost"
+  server_port: 8080
+  tools_timeout: 30
+  
+# 技能配置
+skills:
+  enabled:
+    - "crypto.rsa"
+    - "crypto.aes"
+    - "crypto.classic"
+    - "ctf.parser"
+  
+# 数据收集配置
+data:
+  trajectory_dir: "data/trajectories"
+  analysis_dir: "data/analysis"
+  save_every: 1  # 每几步保存一次
+  
+# 日志配置
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/agent.log"

@@ -1,0 +1,37 @@
+题目: 你会算 MD5 吗
+
+来源: BaseCTF 2024
+
+题目描述：
+Flag 的每个字符都被单独计算了 MD5 哈希值。
+
+加密代码：
+```python
+import hashlib
+
+flag = 'BaseCTF{}'
+
+output = []
+for i in flag:
+    my_md5 = hashlib.md5()
+    my_md5.update(i.encode())
+    output.append(my_md5.hexdigest())
+
+print("output =", output)
+```
+
+输出示例：
+```
+output = ['9d5ed678fe57bcca610140957afab571', '0cc175b9c0f1b6a831c399e269772661', 
+          '03c7c0ace395d80182db07ae2c30f034', 'e1671797c52e15f763380b45e841ec32', ...]
+```
+
+(注：实际题目会给出一个完整的 MD5 列表)
+
+提示：
+1. 每个字符的 MD5 是独立的
+2. Flag 包含可打印 ASCII 字符
+3. 可以逐个字符暴力枚举
+4. 常见的字符包括：字母、数字、下划线、大括号等
+
+请恢复完整的 flag。

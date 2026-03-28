@@ -1,0 +1,13 @@
+{
+  "name": "vigenere_kasiski_examination",
+  "category": "classical",
+  "difficulty": "easy",
+  "description": "Vigenere密码 - Kasiski检验\n\n密文（重复关键词加密）：\nZICVTWQNGRZGVTWAVZHCQYGLMGJ\n\n使用Kasiski检验确定密钥长度，然后频率分析恢复密钥。",
+  "flag": "flag{kasiski_key_crypto}",
+  "hint": "寻找重复的密文片段，计算距离",
+  "solution_type": "kasiski_examination",
+  "parameters": {
+    "ciphertext": "ZICVTWQNGRZGVTWAVZHCQYGLMGJ",
+    "cipher_type": "vigenere"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "rsa_common_factor",
+    "category": "rsa",
+    "difficulty": "medium",
+    "success": true,
+    "flag": "flag{1}",
+    "time": 0
+  },
+  {
+    "name": "aes_ecb_byte_at_a_time",
+    "category": "block",
+    "difficulty": "medium",
+    "success": true,
+    "flag": "flag{Recovered_Secret_String}",
+    "time": 0
+  },
+  {
+    "name": "lfsr_berlekamp_massey",
+    "category": "stream",
+    "difficulty": "medium",
+    "success": true,
+    "flag": "flag{mask = 31}",
+    "time": 0
+  },
+  {
+    "name": "ecc_scalar_multiplication",
+    "category": "ecc",
+    "difficulty": "medium",
+    "success": true,
+    "flag": "flag{(36, 51)}",
+    "time": 0
+  }
+]

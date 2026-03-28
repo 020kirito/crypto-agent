@@ -1,0 +1,9 @@
+题目: Base64 Encoding
+
+我们发现了一个奇怪的字符串:
+
+Zm xlgd rye rvvv nvjfzoov hzrw gsv dliow
+
+看起来像是 Base64 编码的，但直接解码不是明文。
+
+提示: 可能需要先进行其他转换，或者 Base64 只是其中一步。

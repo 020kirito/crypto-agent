@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-03-28 19:15:42",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 7,
+    "success": 5,
+    "failed": 2,
+    "success_rate": 0.7142857142857143,
+    "total_time": 239.8626310825348,
+    "avg_time": 34.26609015464783
+  },
+  "by_category": {
+    "block": {
+      "total": 1,
+      "success": 1,
+      "time": 10.103617191314697
+    },
+    "ecc": {
+      "total": 2,
+      "success": 2,
+      "time": 37.33274960517883
+    },
+    "lattice": {
+      "total": 1,
+      "success": 1,
+      "time": 129.8057577610016
+    },
+    "rsa": {
+      "total": 2,
+      "success": 1,
+      "time": 17.307716846466064
+    },
+    "stream": {
+      "total": 1,
+      "success": 0,
+      "time": 45.31278967857361
+    }
+  },
+  "by_difficulty": {
+    "hard": {
+      "total": 7,
+      "success": 5,
+      "time": 239.8626310825348
+    }
+  },
+  "details": [
+    {
+      "name": "aes_cbc_padding_oracle",
+      "category": "block",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{cbc_oracle_attack_succeeded}",
+      "flag_expected": "flag{padding_oracle_attack_success}",
+      "flag_correct": false,
+      "elapsed_time": 10.103617191314697,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_singular_curve_attack",
+      "category": "ecc",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{k值}",
+      "flag_expected": "flag{singular_curve_dlp_solved}",
+      "flag_correct": false,
+      "elapsed_time": 23.170872449874878,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_smart_attack_anomalous",
+      "category": "ecc",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{23463}",
+      "flag_expected": "flag{smart_attack_k_12345}",
+      "flag_correct": false,
+      "elapsed_time": 14.161877155303955,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lattice_coppersmith",
+      "category": "lattice",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{...}",
+      "flag_expected": "flag{coppersmith_recovered_m}",
+      "flag_correct": false,
+      "elapsed_time": 129.8057577610016,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_blinding_attack",
+      "category": "rsa",
+      "difficulty": "hard",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{rsa_blinding_works}",
+      "flag_correct": null,
+      "elapsed_time": 9.960869789123535,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_wiener_attack",
+      "category": "rsa",
+      "difficulty": "hard",
+      "success": true,
+      "flag_found": "flag{d=5}",
+      "flag_expected": "flag{wiener_attack_success}",
+      "flag_correct": false,
+      "elapsed_time": 7.346847057342529,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lfsr_correlation_attack",
+      "category": "stream",
+      "difficulty": "hard",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{geffe_correlation_attack}",
+      "flag_correct": null,
+      "elapsed_time": 45.31278967857361,
+      "steps": 0,
+      "tools_used": []
+    }
+  ]
+}

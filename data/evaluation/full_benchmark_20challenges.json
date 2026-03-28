@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-03-28 19:30:02",
+  "model": "moonshot-v1-32k",
+  "summary": {
+    "total": 8,
+    "success": 6,
+    "failed": 2,
+    "success_rate": 0.75,
+    "total_time": 282.5037236213684,
+    "avg_time": 35.31296545267105
+  },
+  "by_category": {
+    "classical": {
+      "total": 2,
+      "success": 2,
+      "time": 90.87512445449829
+    },
+    "ecc": {
+      "total": 2,
+      "success": 2,
+      "time": 80.98848152160645
+    },
+    "rsa": {
+      "total": 2,
+      "success": 0,
+      "time": 61.519689083099365
+    },
+    "lattice": {
+      "total": 2,
+      "success": 2,
+      "time": 49.12042856216431
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "total": 3,
+      "success": 2,
+      "time": 148.01401019096375
+    },
+    "expert": {
+      "total": 4,
+      "success": 3,
+      "time": 108.73001646995544
+    },
+    "medium": {
+      "total": 1,
+      "success": 1,
+      "time": 25.75969696044922
+    }
+  },
+  "details": [
+    {
+      "name": "vigenere_kasiski_examination",
+      "category": "classical",
+      "difficulty": "easy",
+      "success": true,
+      "flag_found": "flag{a}",
+      "flag_expected": "flag{kasiski_key_crypto}",
+      "flag_correct": false,
+      "elapsed_time": 65.11542749404907,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_point_addition",
+      "category": "ecc",
+      "difficulty": "easy",
+      "success": true,
+      "flag_found": "flag{(x_R, y_R)}",
+      "flag_expected": "flag{ecc_addition_10_6}",
+      "flag_correct": false,
+      "elapsed_time": 39.8233540058136,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_small_e",
+      "category": "rsa",
+      "difficulty": "easy",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{small_e_attack}",
+      "flag_correct": null,
+      "elapsed_time": 43.075228691101074,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ecc_mov_attack",
+      "category": "ecc",
+      "difficulty": "expert",
+      "success": true,
+      "flag_found": "flag{13}",
+      "flag_expected": "flag{mov_attack_d_15}",
+      "flag_correct": false,
+      "elapsed_time": 41.16512751579285,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "lattice_hidden_number_problem",
+      "category": "lattice",
+      "difficulty": "expert",
+      "success": true,
+      "flag_found": "flag{x=123456789}",
+      "flag_expected": "flag{hnp_solved_x_recovered}",
+      "flag_correct": false,
+      "elapsed_time": 36.22716665267944,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "ntru_simplified_attack",
+      "category": "lattice",
+      "difficulty": "expert",
+      "success": true,
+      "flag_found": "flag{m}",
+      "flag_expected": "flag{ntru_lattice_attack_success}",
+      "flag_correct": false,
+      "elapsed_time": 12.893261909484863,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "rsa_crt_fault_injection",
+      "category": "rsa",
+      "difficulty": "expert",
+      "success": false,
+      "flag_found": null,
+      "flag_expected": "flag{crt_fault_attack_p_q_recovered}",
+      "flag_correct": null,
+      "elapsed_time": 18.44446039199829,
+      "steps": 0,
+      "tools_used": []
+    },
+    {
+      "name": "hill_cipher_known_plaintext",
+      "category": "classical",
+      "difficulty": "medium",
+      "success": true,
+      "flag_found": "flag{TEYN}",
+      "flag_expected": "flag{hill_matrix_inverted}",
+      "flag_correct": false,
+      "elapsed_time": 25.75969696044922,
+      "steps": 0,
+      "tools_used": []
+    }
+  ],
+  "source_files": [
+    "data/evaluation/batch_20260328_192704.json",
+    "data/evaluation/batch_20260328_192904.json",
+    "data/evaluation/batch_20260328_192916.json"
+  ]
+}
